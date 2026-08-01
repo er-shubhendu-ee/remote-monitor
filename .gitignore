@@ -1,0 +1,77 @@
+managed_components/
+
+# =========================================================================
+# Espressif System Hardening Additions
+# =========================================================================
+
+# Ignore auto-generated configuration files (keep custom defaults instead)
+sdkconfig
+sdkconfig.old
+sdkconfig.ci.old
+
+# Ignore local VS Code configuration states and workspace caches
+.vscode/launch.json
+.vscode/settings.json
+.clangd/
+.cache/
+
+# Python automation testing caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Ignore local dependency lock states if using transient package manager hooks
+dependencies.lock
+
+
+# Ignore compiled binaries and sdkconfig files
+build/
+**/build/
+*.elf
+*.bin
+*.map
+*.log
+
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# debug information files
+*.dwo

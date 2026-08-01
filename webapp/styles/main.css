@@ -1,0 +1,255 @@
+/**
+ * @file      main.css
+ * @author:   Shubhendu B B
+ * @date:     02/08/2026
+ * @brief     
+ * @details   Distributed globally for free under the MIT License terms.
+ * 
+ * @copyright Copyright (c) 2025 er-shubhendu-ee
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ **/
+/* styles/main.css : Styles for index.html */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #FFC107;
+    color: #222;
+    line-height: 1.4;
+}
+
+.device-frame {
+    max-width: 600px;
+    min-height: 800px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    background: #005f73;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.site-header .title {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.site-header .subtitle {
+    margin: 0;
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+.site-header .nav-link {
+    background: #0a9396;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.site-header .nav-link:hover {
+    background: #00707a;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.page {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 120px;
+    gap: 0.3em;
+}
+
+.network-indicator,
+.value-indicator {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.controls-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+}
+
+.btn {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #B22222;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #8B1A1A;
+}
+
+.btn-ghost {
+    background: #347433;
+}
+
+.bar-graph {
+    width: 40px;
+    height: 150px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: flex-end;
+    margin: auto;
+}
+
+.bar-fill {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.bar-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.network-disconnected,
+.inverter-on {
+    color: #B22222;
+}
+
+.network-connected,
+.inverter-off {
+    color: #347433;
+}
+
+.site-footer {
+    background: #eee;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.feedback {
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+
+.feedback.error {
+    color: #B22222;
+}
+
+.feedback.success {
+    color: #347433;
+}
+
+#log-entries {
+    white-space: pre-line;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .device-frame {
+        min-width: unset;
+        max-width: 100vw;
+    }
+
+    .card-title {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card {
+        padding-top: 0.7em;
+        padding-bottom: 0.7em;
+        min-width: unset;
+        max-width: 98vw;
+    }
+
+    .status-grid {
+        flex-direction: column;
+        gap: 1em;
+        align-items: stretch;
+    }
+
+    .controls-grid {
+        max-width: 98vw;
+    }
+
+    .site-header,
+    .site-footer {
+        padding: 1em;
+    }
+}

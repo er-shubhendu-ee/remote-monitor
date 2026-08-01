@@ -1,0 +1,3 @@
+# Get directory listing in a file
+Get-ChildItem -Recurse -Name |    Where-Object { $_ -notmatch '(^\.vscode)|(^\.devcontainer)|(^build)|(^\.gitignore)' } |    Sort-Object |    Out-File dir_structure.txt
+
