@@ -1,0 +1,79 @@
+<!--*
+ * @file      config.html
+ * @author:   Shubhendu B B
+ * @date:     02/08/2026
+ * @brief     
+ * @details   Distributed globally for free under the MIT License terms.
+ * 
+ * @copyright Copyright (c) 2025 er-shubhendu-ee
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *-->
+<!-- config/config.html : Configuration UI -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure - Remote monitor</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="device-frame">
+        <header class="site-header">
+            <h1>Configuration</h1>
+            <nav>
+                <a href="../index.html" class="nav-link">🏠 Home</a>
+            </nav>
+        </header>
+
+        <main class="page">
+            <!-- Network Settings -->
+            <section class="card">
+                <h2>Network Settings</h2>
+                <form id="network-form">
+                    <label for="ssid">WiFi SSID:</label>
+                    <input type="text" id="ssid" name="ssid" placeholder="Enter SSID">
+
+                    <label for="password">WiFi Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password">
+
+                    <button type="submit" class="btn">Save Network</button>
+                    <p id="network-feedback" class="feedback"></p>
+                </form>
+                <!-- Network status -->
+                <div class="status-grid">
+                    <div class="indicator network-indicator">
+                        <span class="label">Network status:</span>
+                        <span id="netwok-status" class="value network-disconnected"
+                            aria-live="polite">Disconnected</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <p>&copy; 2026 to now Device Design Lab</p>
+        </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
