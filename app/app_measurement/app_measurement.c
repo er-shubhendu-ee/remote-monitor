@@ -35,6 +35,7 @@
 #include "driver/i2c_master.h"
 #include "esp_timer.h"
 #include "freertos/FreeRTOS.h"
+#include "pf8591.h"
 
 #define LOG_LEVEL LOG_LEVEL_DEBUG
 #define TAG "APP_MEASUREMENT"

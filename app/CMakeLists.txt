@@ -22,6 +22,7 @@ idf_component_register(
             "./app_storage"
             "./app_wifi"
             "./app_measurement"
+            "./config"
       
     PRIV_REQUIRES
             esp_system      #

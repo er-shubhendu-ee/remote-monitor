@@ -30,7 +30,7 @@
 #include "util_common_log.h"
 
 //
-#include "app_config.h"
+#include "config_app.h"
 #include "app_wifi.h"
 
 //

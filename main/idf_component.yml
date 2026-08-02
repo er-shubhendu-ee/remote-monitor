@@ -16,3 +16,4 @@ dependencies:
   #   public: true
   espressif/mdns: '*'
   bammer187/ads1115: ^1.0.1
+  esp-idf-lib/pcf8591: '*'

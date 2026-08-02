@@ -1,5 +1,5 @@
 /**
- * @file      app_config.h
+ * @file      config_device.h
  * @author:   Shubhendu B B
  * @date:     02/08/2026
  * @brief
@@ -26,34 +26,12 @@
  * SOFTWARE.
  **/
 
-#ifndef _APP_CONFIG_H_
-#define _APP_CONFIG_H_
+#ifndef CONFIG_DEVICE_H_
+#define CONFIG_DEVICE_H_
 
-#include <stddef.h>
-#include <stdint.h>
-
-//
-#define APP_CONFIG_EVENT_QUEUE_ELEMENT_COUNT 32
-
-// Storage
-#define APP_CONFIG_STORAGE_ROOT_PATH "/spiflash"
-
-// Server
-#define APP_CONFIG_SERVER_DNS_DEFAULT "remote-monitor"
-
-// Wifi
-#define APP_CONFIG_AP_SSID_DEFAULT "remote-monitor"
-#define APP_CONFIG_AP_PASS_DEFAULT "876543210"
-#define APP_CONFIG_AP_CHNL_DEFAULT 1
-#define APP_CONFIG_AP_CONN_MAX 2
-
-#define APP_CONFIG_STA_SSID_DEFAULT "station-ssid"
-#define APP_CONFIG_STA_PASS_DEFAULT "station-passwords"
-#define APP_CONFIG_STA_RETRY_CNT_MAX 10
-
-//
-#define APP_CONFIG_APP_EVENT_MANAGER_TASK_STACK_SIZE (4U * 1024U)
-#define APP_CONFIG_SERVER_TASK_STACK_SIZE (10U * 1024U)
+#define config_device_ADC_ADDR 0x48
+#define config_device_ADC_SCL 22
+#define config_device_ADC_SDA 21
 
 #ifdef __cplusplus
 extern "C" {
@@ -63,4 +41,4 @@ extern "C" {
 }
 #endif
 
-#endif /* @end  _APP_CONFIG_H_*/
+#endif /* @end  CONFIG_DEVICE_H_*/

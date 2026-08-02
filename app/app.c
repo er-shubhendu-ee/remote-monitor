@@ -31,7 +31,6 @@
 //
 #include "app.h"
 #include "app_client.h"
-#include "app_config.h"
 #include "app_gpio.h"
 #include "app_helper.h"
 #include "app_measurement.h"
@@ -39,6 +38,7 @@
 #include "app_sntp.h"
 #include "app_storage.h"
 #include "app_wifi.h"
+#include "config_app.h"
 
 //
 #include "esp_err.h"
